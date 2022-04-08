@@ -1,0 +1,10 @@
+<app-product-search
+  (lastSearchProducts)="addSearched($event)"
+></app-product-search>
+<br />
+<div class="container">
+  <span style="font-weight: bold"> Last Searched items:</span>
+  <ul>
+    <li *ngFor="let item of items">{{ item }}</li>
+  </ul>
+</div>

@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <h3>Search Product</h3>
+    <div class="col-lg-12">
+      <div class="form-group">
+        <input name="search" class="form-control" [(ngModel)]="searchText" />
+        <br />
+        <p>
+          <span style="font-weight: bold">Result is: </span>
+          <span>{{ service.result }}</span>
+        </p>
+        <button
+          class="btn btn-primary"
+          (click)="this.searchTextFunc(this.searchText)"
+        >
+          Search
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
